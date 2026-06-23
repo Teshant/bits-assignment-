@@ -1,0 +1,28 @@
+Question 5 – Storage Health Assessment
+
+Command: lsblk
+Observation: Listed available storage devices and partitions.
+
+Command: df -h
+Observation: Displayed mounted file systems and disk usage.
+
+Command: df -i
+Observation: Displayed inode utilization statistics.
+
+Command: du -sh *
+Observation: Measured disk usage of files and directories.
+
+Command: vi Storage_Assessment_Report.txt
+Observation: Created and edited the report using the vi editor.
+
+Storage Health Observations:
+Storage utilization is within acceptable limits.
+Inode usage is normal.
+Mounted file systems are functioning correctly.
+
+Recommendations:
+1. Remove unnecessary files regularly.
+2. Archive old logs.
+3. Monitor inode utilization.
+4. Perform periodic storage audits.
+5. Maintain adequate free disk space.
