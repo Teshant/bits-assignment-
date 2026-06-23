@@ -1,0 +1,23 @@
+Question 2 – Secure Project Workspace Setup
+
+Command: mkdir -p Secure_Project/{docs,data,backup}
+Observation: Created project workspace with required subdirectories.
+
+Command: ls -R Secure_Project
+Observation: Verified directory structure.
+
+Command: ls -ld Secure_Project
+Observation: Checked existing permissions.
+
+Command: chmod 750 Secure_Project
+Observation: Modified permissions to restrict unauthorized access.
+
+Command: chown student:student Secure_Project
+Observation: Ownership assigned to project owner.
+
+Command: umask
+Output: 0022
+Observation: Checked default permission mask.
+
+Conclusion:
+Permissions protect project files by allowing access only to authorized users and groups.
