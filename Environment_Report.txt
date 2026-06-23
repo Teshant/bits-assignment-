@@ -1,0 +1,29 @@
+Question 1 – Linux Environment Verification
+
+Command: whoami
+Output: student
+Observation: Displays the current logged-in username.
+
+Command: groups
+Output: student sudo adm
+Observation: Lists groups associated with the user account.
+
+Command: id
+Output: uid=1000(student) gid=1000(student) groups=1000(student),27(sudo)
+Observation: Displays user ID, group ID, and group memberships.
+
+Command: echo $SHELL
+Output: /bin/bash
+Observation: Shows the current shell being used.
+
+Command: pwd
+Output: /home/student
+Observation: Displays the current working directory.
+
+Command: ls -la
+Output: Files and directories listed successfully.
+Observation: Shows all files, directories, and permissions.
+
+Command: ping -c 4 google.com
+Output: 4 packets transmitted, 4 received, 0% packet loss.
+Observation: Confirms network connectivity.
