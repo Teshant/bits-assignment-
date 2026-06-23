@@ -1,0 +1,22 @@
+Question 4 – File Access and I/O Investigation
+
+Command: lsof
+Observation: Displayed currently open files and processes.
+
+Command: ls -l /proc/$$/fd
+Observation: Displayed file descriptors.
+
+Command: echo "Hello Linux" > output.txt
+Observation: Redirected standard output to a file.
+
+Command: ls nonexistentfile 2> error.txt
+Observation: Redirected error output to a file.
+
+Command: ls nonexistentfile > output.txt 2> error.txt
+Observation: Demonstrated output and error redirection.
+
+Command: ulimit -a
+Observation: Displayed resource limits for the current shell.
+
+Conclusion:
+Linux manages I/O using file descriptors and supports flexible output redirection mechanisms
