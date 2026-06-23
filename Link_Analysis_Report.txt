@@ -1,0 +1,26 @@
+Question 3 – File System and Link Analysis
+
+Command: echo "Linux Link Test" > original.txt
+Observation: Created original file.
+
+Command: ln original.txt hardlink.txt
+Observation: Created hard link.
+
+Command: ln -s original.txt symlink.txt
+Observation: Created symbolic link.
+
+Command: ls -li
+Observation: Original file and hard link share the same inode, symbolic link has a different inode.
+
+Command: stat original.txt hardlink.txt symlink.txt
+Observation: Collected metadata and inode information.
+
+Command: rm original.txt
+Observation: Deleted original file.
+
+Results:
+Hard link continued to function.
+Symbolic link became broken.
+
+Conclusion:
+Hard links reference the same inode, while symbolic links reference the file path.
